@@ -1,4 +1,4 @@
-![image](https://github.com/pengyumu/CapsTracking/assets/174324735/dc9bd8d5-cf79-4c15-8c20-a214aaceebe5)Here, we introduce a method for tracking the positions of pen caps with different colors using linear filtering techniques. The method leverages color-based detection to distinguish between pen caps of varying colors and implements a 2D Kalman filter to track their trajectories over time. We introduce this method as follows:
+Here, we introduce a method for tracking the positions of pen caps with different colors using linear filtering techniques. The method leverages color-based detection to distinguish between pen caps of varying colors and implements a 2D Kalman filter to track their trajectories over time. We introduce this method as follows:
 
 ### Color-based Detection
 
