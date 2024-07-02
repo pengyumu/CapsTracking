@@ -14,8 +14,10 @@ We employed predefined color ranges to distinguish between pen caps of different
 
 The video frames are first converted from the RGB color space to the HSV color space using OpenCV. Within the HSV space, masks for each target color (black, blue, and red) are generated using predefined thresholds:
 
-```python
-Mask_color = cv2.inRange(HSV, Lower_color, Upper_color))
-
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
 
 Given the recognized masks, morphological operations, including opening and closing, are then applied to these masks to enhance the accuracy of the detected regions by removing noise. Following the morphological operations, regions in the masks with an area exceeding a threshold (e.g., 10,000 pixels) are considered outliers and filtered out. This is implemented as:
