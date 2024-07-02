@@ -26,5 +26,6 @@ Finally, contours are extracted from the masks to precisely identify the positio
 Given the detected positions of pen caps with different colors, we leverage a 2D Kalman filter to track their positions over time. Specifically, we adapt the Kalman filter that we implemented in Assignment 2 for this task. The Kalman filter is initialized with parameters such as sampling time, control input, process noise covariance, and measurement noise covariance. The predict and update steps of the Kalman filter are then applied to estimate and refine the positions of the pen caps in each frame, based on the color-based detections. Figure 2 provides a visualization of the Kalman filter tracking results for pen caps with different colors in the video.
 
 
-![image](https://github.com/pengyumu/CapsTracking/assets/174324735/fa71f2e5-c432-4075-8253-08f6d1c110ae)
+![image](https://github.com/pengyumu/CapsTracking/assets/174324735/205a151b-5dfb-42ab-9101-e684bc64cb89)
+
 
