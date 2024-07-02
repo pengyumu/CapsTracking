@@ -15,9 +15,13 @@ We employed predefined color ranges to distinguish between pen caps of different
 The video frames are first converted from the RGB color space to the HSV color space using OpenCV. Within the HSV space, masks for each target color (black, blue, and red) are generated using predefined thresholds:
 
 ```
-function test() {
-  console.log("notice the blank line before this function?");
+Mask_color = cv2.inRange(HSV, Lower_color, Upper_color)
 }
 ```
 
 Given the recognized masks, morphological operations, including opening and closing, are then applied to these masks to enhance the accuracy of the detected regions by removing noise. Following the morphological operations, regions in the masks with an area exceeding a threshold (e.g., 10,000 pixels) are considered outliers and filtered out. This is implemented as:
+
+```
+Filtered_Mask = Mask[cv2.contourArea(cnt) < 10000]
+```
+Finally, contours are extracted from the masks to precisely identify the positions of the pen caps in each frame. The centroids of these contours are calculated to determine the positions (x, y coordinates) of the pen caps. Figure 1 shows an example of pen cap color detection.
