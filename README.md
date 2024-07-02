@@ -37,3 +37,10 @@ Given the detected positions of pen caps with different colors, we leverage a 2D
   <img src="https://github.com/pengyumu/CapsTracking/assets/174324735/205a151b-5dfb-42ab-9101-e684bc64cb89" alt="Combined Image of Pen Cap Color Detection and Kalman Filter Tracking Results">
   <br>
 </p>
+
+
+<br>
+<br>
+
+
+https://github.com/pengyumu/CapsTracking/issues/1#issue-2385615384
