@@ -42,7 +42,6 @@ Given the detected positions of pen caps with different colors, we leverage a 2D
 <br>
 <br>
 
-https://github.com/pengyumu/CapsTracking/issues/1#issue-2385615384.mp4
 
 
 
